@@ -1,0 +1,16 @@
+﻿@model WebApplication4.Models.User
+
+<h2>Foydalanuvchini tahrirlash</h2>
+@using (Html.BeginForm())
+{
+    @Html.HiddenFor(m => m.Id)
+    <div>
+        <label>Name:</label>
+        @Html.TextBoxFor(m => m.Name)
+    </div>
+    <div>
+        <label>Email:</label>
+        @Html.TextBoxFor(m => m.Email)
+    </div>
+    <button type="submit">Yangilash</button>
+}

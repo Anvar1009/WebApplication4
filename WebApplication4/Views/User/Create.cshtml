@@ -1,0 +1,19 @@
+﻿@model WebApplication4.Models.User
+
+<h2>Foydalanuvchi qo'shish</h2>
+@using (Html.BeginForm())
+{
+    <div>
+        <label>Id:</label>
+        @Html.TextBoxFor(m => m.Id)
+    </div>
+    <div>
+        <label>Name:</label>
+        @Html.TextBoxFor(m => m.Name)
+    </div>
+    <div>
+        <label>Email:</label>
+        @Html.TextBoxFor(m => m.Email)
+    </div>
+    <button type="submit">Saqlash</button>
+}
